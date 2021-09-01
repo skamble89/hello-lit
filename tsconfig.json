@@ -1,21 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es2018",
-    "module": "esnext",
+    "target": "es2019",
+    "module": "es2015",
     "moduleResolution": "node",
-    "noEmitOnError": true,
-    "lib": ["es2017", "dom"],
-    "strict": true,
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "outDir": "dist",
-    "sourceMap": true,
-    "inlineSources": true,
-    "rootDir": "./",
+    "lib": [
+      "es2019",
+      "dom"
+    ],
     "declaration": true,
-    "incremental": true
+    "declarationMap": true,
+    "experimentalDecorators": true,
+    "outDir": "dist",
   },
-  "include": ["**/*.ts"]
+  "include": [
+    "**/*.ts"
+  ]
 }

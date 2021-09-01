@@ -1,11 +1,16 @@
 {
-  "name": "hello-lit",
-  "version": "0.0.0",
+  "name": "@skamble89/hello-lit",
+  "version": "0.0.1",
   "description": "Webcomponent hello-lit following open-wc recommendations",
   "author": "hello-lit",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "type": "module",
+  "main": "dist/hello-lit.js",
+  "module": "dist/hello-lit.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "types": "hello-lit.d.ts",
   "scripts": {
     "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
     "build": "tsc",
@@ -16,10 +21,8 @@
     "test:watch": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wtr --watch\""
   },
   "dependencies": {
-    "d3": "^7.0.0",
     "lit-element": "^2.5.1",
-    "lit-html": "^1.4.1",
-    "moment": "^2.29.1"
+    "lit-html": "^1.4.1"
   },
   "devDependencies": {
     "@web/dev-server": "^0.1.20",
